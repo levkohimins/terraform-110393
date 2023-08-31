@@ -1,5 +1,9 @@
+inputs = {
+  test_var = "test_value"
+}
+
 terraform {
-  source = "./"
+  source = "../module"
 
   after_hook "after_hook_plan" {
     commands     = ["plan"]
